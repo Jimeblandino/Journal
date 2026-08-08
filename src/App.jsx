@@ -590,7 +590,7 @@ function Viewer({ entry, onClose, onEdit }) {
 
           {images.length > 0 && (
             <div className="relative w-full rounded-2xl overflow-hidden flex items-center justify-center" style={{ background: COLORS.violetSoft, minHeight: 220, maxHeight: 480 }}>
-  <img src={images[imgIdx]} alt="" className="w-full" style={{ maxHeight: 480, objectFit: "contain" }} />
+  <img src={images[imgIdx]} alt="" className="w-full" style={{ maxHeight: 480, objectFit: "contain" />
                 <>
                   <button
                     onClick={() => setImgIdx((i) => (i - 1 + images.length) % images.length)}
